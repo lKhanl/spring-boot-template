@@ -13,11 +13,9 @@ application. This template includes the following features:
 - Lombok
 - PostgreSQL
 - Swagger
-- JUnit 5
 - Maven
 - Git
 - Docker
-- GitHub Actions
 
 ## Getting Started
 
