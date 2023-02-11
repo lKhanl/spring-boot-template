@@ -1,6 +1,6 @@
 package dev.oguzhanercelik.service;
 
-import dev.oguzhanercelik.config.JwtSecurityTokenConfiguration;
+import dev.oguzhanercelik.config.security.JwtSecurityTokenConfiguration;
 import dev.oguzhanercelik.exception.AuthenticationFailedException;
 import dev.oguzhanercelik.model.dto.UserDto;
 import dev.oguzhanercelik.model.error.ErrorDetail;

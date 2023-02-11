@@ -1,4 +1,4 @@
-package dev.oguzhanercelik.config;
+package dev.oguzhanercelik.config.security;
 
 import dev.oguzhanercelik.exception.TokenGenerateException;
 import io.jsonwebtoken.SignatureAlgorithm;
