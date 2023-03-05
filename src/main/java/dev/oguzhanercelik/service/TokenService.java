@@ -65,4 +65,5 @@ public class TokenService {
         }
         return authenticationHeader.split(StringUtils.SPACE)[1];
     }
+
 }

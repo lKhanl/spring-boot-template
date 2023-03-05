@@ -55,10 +55,6 @@ public class AuthenticationService {
             throw new ApiException(ErrorEnum.UNAUTHORIZED);
         }
 
-
-
-        System.out.println("user = " + user.get().getEmail());
-
         // check if user is active
 
         final String token = tokenService.createToken(userConverter.toDto(user.get()));

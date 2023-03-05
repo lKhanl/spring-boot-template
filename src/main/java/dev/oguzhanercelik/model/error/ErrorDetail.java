@@ -14,7 +14,6 @@ import lombok.Setter;
 public class ErrorDetail {
 
     private int code;
-
     private String message;
 
 }

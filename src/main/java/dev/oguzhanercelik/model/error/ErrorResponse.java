@@ -21,12 +21,9 @@ import java.util.List;
 public class ErrorResponse {
 
     private String traceId;
-
     private String exception;
-
     @Builder.Default
     private Long timestamp = LocalDateTime.now().atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
-
     @Singular
     private List<ErrorDetail> errors;
 

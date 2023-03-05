@@ -24,5 +24,4 @@ public class UserController {
         return userService.getUserInfo(Long.valueOf(MDC.get(MdcConstant.X_USER_ID)));
     }
 
-
 }

@@ -14,4 +14,5 @@ public class AuthenticationFailedException extends RuntimeException {
         this.httpStatus = HttpStatus.UNAUTHORIZED;
         this.errorResponse = errorResponse;
     }
+
 }

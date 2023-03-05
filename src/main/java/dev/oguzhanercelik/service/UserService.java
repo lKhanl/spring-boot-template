@@ -27,18 +27,6 @@ public class UserService implements UserDetailsService {
         }
     }
 
-    public Optional<User> findByEmailAndPassword(String email, String password) {
-        return userRepository.findByEmailAndPassword(email, password);
-    }
-
-//    public void changePassword(Integer merchantUserId, MerchantUserUpdatePasswordRequest request) {
-//        final String hashedCurrentPassword = hashingService.hashAsMD5(request.getCurrentPassword());
-//        final MerchantUser merchantUser = merchantUserRepository.findByIdAndPassword(merchantUserId, hashedCurrentPassword)
-//                .orElseThrow(() -> new MerchantApiException(ErrorEnum.WRONG_CURRENT_PASSWORD));
-//        merchantUser.setPassword(hashingService.hashAsMD5(request.getNewPassword()));
-//        merchantUserRepository.save(merchantUser);
-//    }
-
     public UserDto getUserInfo(Long uid) {
         final User merchantUser = userRepository.findById(uid)
                 .orElseThrow(() -> new ApiException(ErrorEnum.USER_NOT_FOUND));
@@ -57,4 +45,5 @@ public class UserService implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return findByEmail(username).orElseThrow(() -> new UsernameNotFoundException("User not found"));
     }
+
 }

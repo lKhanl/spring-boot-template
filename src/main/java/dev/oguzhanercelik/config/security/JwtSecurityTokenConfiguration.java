@@ -24,4 +24,5 @@ public class JwtSecurityTokenConfiguration {
             throw new TokenGenerateException(ex.getMessage());
         }
     }
+
 }

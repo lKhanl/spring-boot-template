@@ -59,4 +59,5 @@ public class AuthenticationTokenFilter extends GenericFilterBean {
         SecurityContextHolder.clearContext();
         httpServletResponse.sendError(HttpStatus.UNAUTHORIZED.value(), message);
     }
+
 }

@@ -20,4 +20,5 @@ public class ApiException extends RuntimeException {
         this.error = error;
         this.args = args;
     }
+
 }
